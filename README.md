@@ -52,4 +52,4 @@ This repo is partly a portfolio artifact: evidence of a real, sustained project 
 
 ## Credits
 
-Built by **Doug** in collaboration with an AI narrator. Inspired by the *Dungeon Crawler Carl* series by Matt Dinniman. This is a non-commercial fan project for personal play.
+Built by **Blue** in collaboration with an AI narrator. Inspired by the *Dungeon Crawler Carl* series by Matt Dinniman. This is a non-commercial fan project for personal play.
