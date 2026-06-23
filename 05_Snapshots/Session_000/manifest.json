@@ -1,0 +1,30 @@
+{
+  "session_number": 0,
+  "timestamp": "2026-05-18T14:34:29.133564",
+  "floor": 1,
+  "level_ups": [],
+  "dossier_archives": [],
+  "notes": "Pre-Session-1 baseline. Floor 1 Build complete, Floor 1 Story Session complete (Campaign Spine refined, Thread Tracker recalibrated, Voice Bible Story notes added, Character Index active cast marked, Session_001_Handoff drafted). Crawler dossiers built: Doug (Substitute Teacher, HP 23, MP 8) and Casey (Trivia Night Host, HP 17, MP 14). Clean rollback point before Play Session 1.",
+  "files": [
+    "00_Campaign/Campaign_Spine.docx",
+    "00_Campaign/Character_Index.docx",
+    "00_Campaign/Combat_Cheat_Sheet.docx",
+    "00_Campaign/Contract_Obligation_Log.docx",
+    "00_Campaign/Crafting_Log.docx",
+    "00_Campaign/Crawler_Dossiers.docx",
+    "00_Campaign/Discovery_Index.docx",
+    "00_Campaign/Dungeon_State_Log.docx",
+    "00_Campaign/Master_Inventory.docx",
+    "00_Campaign/Moments_Log.docx",
+    "00_Campaign/Pet_Companion_Registry.docx",
+    "00_Campaign/Reputation_Ledger.docx",
+    "00_Campaign/Thread_Tracker.docx",
+    "00_Campaign/Voice_Bible.docx",
+    "01_Characters/Food_Court_People.docx",
+    "01_Characters/Garland_Cress.docx",
+    "01_Characters/Harvey_Pennybrook.docx",
+    "01_Characters/Tasha_Okonkwo.docx"
+  ],
+  "file_count": 18,
+  "snapshot_type": "session_end"
+}

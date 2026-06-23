@@ -1,0 +1,14 @@
+# Python compiled
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp / working files
+*.tmp
+document_temp.xml
+~$*
+*.bak
+
+# OS cruft
+.DS_Store
+Thumbs.db

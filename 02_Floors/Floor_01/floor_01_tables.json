@@ -1,0 +1,1611 @@
+{
+  "_meta": {
+    "floor": 1,
+    "floor_name": "Everything Must Go",
+    "author_session": "build_session_2026-05-18",
+    "created": "2026-05-18",
+    "notes": "Floor 1 of DCC v2 campaign. Setting: regional shopping mall. Boss: Walda (the generator). Signature mechanic: Loyalty Card system. Tutorial arc \u2014 no permanent death."
+  },
+  "event_tables": {
+    "enter_area": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "The PA chimes in with a welcome: 'Attention shoppers \u2014 fresh meat at the [zone]. Limited-time engagement!' No mechanical effect, but the volume rises if ignored.",
+        "tags": [
+          "neutral",
+          "flavor"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "Fluorescent lights flicker once and stabilize. NABRZ feed updates: one new post about the Crawlers entering. No mechanical effect.",
+        "tags": [
+          "neutral",
+          "flavor",
+          "nabrz"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "A nearby kiosk plays a tinny jingle. DEX TN 11 to ignore or take -1 to next CHA roll from the song being stuck in your head.",
+        "tags": [
+          "funny",
+          "dex",
+          "minor"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 3,
+        "result": "The floor tile beneath one Crawler is sticky. Whoever rolled lowest on initiative this scene loses 5 ft of movement next turn.",
+        "tags": [
+          "hazard",
+          "minor"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 3,
+        "result": "An automated cleaning robot trundles past. Harmless. If anyone interacts (action), it produces a coupon (Common loot drop, no Loyalty Card credit).",
+        "tags": [
+          "loot",
+          "choice"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "The PA addresses one Crawler BY NAME and comments on their outfit. CHA TN 12 to respond well, or -1 to CHA in this zone until they change a visible piece of gear.",
+        "tags": [
+          "fame",
+          "cha",
+          "funny"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "A mall directory map updates in real time to add a new shop that wasn't there before. Investigate: the shop sells exactly one item (Uncommon, random) for one Loyalty Card star. Vanishes after one purchase per scene.",
+        "tags": [
+          "loot",
+          "choice",
+          "funny"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 2,
+        "result": "Mall security camera swivels to follow the party. Viewers +1d6\u00d710. No further effect unless players ham it up (CHA opportunity).",
+        "tags": [
+          "fame",
+          "minor"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 2,
+        "result": "A pre-recorded promotional message plays: 'Free sample at Kiosk 3-B for the next sixty seconds!' If players sprint there: free Pennybrook almonds (1d4 worth). If they ignore it, no penalty.",
+        "tags": [
+          "loot",
+          "choice",
+          "funny"
+        ]
+      },
+      {
+        "id": 10,
+        "weight": 2,
+        "result": "The escalator near the party reverses direction for one round. Anyone on it: DEX TN 12 or 1d4 damage from a fall. Funnier if it succeeds.",
+        "tags": [
+          "hazard",
+          "dex"
+        ]
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "INCONVENIENT: All Loyalty Cards held by the party temporarily zero out for the duration of this scene. The mall is 'recalibrating loyalty metrics.' Tally returns at scene end.",
+        "tags": [
+          "hazard",
+          "loyalty",
+          "major"
+        ]
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "INCONVENIENT: A small swarm of moths emerges from a Bath & Body Works candle. CON TN 12 or 1d4 poison damage. Funny but it hurts.",
+        "tags": [
+          "hazard",
+          "combat",
+          "con"
+        ]
+      },
+      {
+        "id": 13,
+        "weight": 1,
+        "result": "INCONVENIENT: The lights in this zone go out for 60 seconds. Disadvantage on all DEX/ranged rolls. NABRZ feed pings \u2014 someone's posting about the blackout in real time.",
+        "tags": [
+          "hazard",
+          "environmental"
+        ]
+      },
+      {
+        "id": 14,
+        "weight": 1,
+        "result": "INCONVENIENT: A 'lost child' page summons the highest-CHA Crawler to the customer service desk. Refusing: -2 Loyalty stars. Going: it's not a real child, but the desk gives them a Common item.",
+        "tags": [
+          "choice",
+          "loyalty",
+          "cha"
+        ]
+      },
+      {
+        "id": 15,
+        "weight": 1,
+        "result": "ABSURD: A flock of mall-bird sparrows has nested in this zone. They wear tiny lanyards. They will steal one piece of small gear (coins, single-use items) if Crawlers stand still. Make a DEX TN 13 to keep your stuff.",
+        "tags": [
+          "funny",
+          "loot",
+          "dex"
+        ]
+      },
+      {
+        "id": 16,
+        "weight": 1,
+        "result": "ABSURD: The PA accidentally pages the wrong name and a cardboard standee of a 1990s teen celebrity wanders out. It's confused. It compliments one Crawler and walks off. +1 Loyalty (Cardboard Faction).",
+        "tags": [
+          "funny",
+          "loyalty",
+          "flavor"
+        ]
+      },
+      {
+        "id": 17,
+        "weight": 1,
+        "result": "ABSURD: A perfume cloud from a defunct Sephora kiosk drifts through. CON TN 11 or sneeze for 3 rounds, disadvantage on stealth. Everyone smells fantastic regardless.",
+        "tags": [
+          "funny",
+          "con",
+          "hazard"
+        ]
+      }
+    ],
+    "rest": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "Rest is uneventful. Full HP/MP recovery. Mall PA whispers 'Have a magical day' once during the rest.",
+        "tags": [
+          "neutral"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "A janitor pushes a cart past during the rest. Doesn't acknowledge the party. Recover normally. NABRZ feed has 3 new posts when the party wakes.",
+        "tags": [
+          "neutral",
+          "flavor"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "One Crawler dreams about the mall as it was in 1994. They wake with +1 to all rolls this session (the dungeon is being nostalgic). Apply to whoever rolled highest CHA.",
+        "tags": [
+          "fame",
+          "buff"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "Mid-rest, a vending machine in the resting area dispenses a free item. Roll once on Common loot.",
+        "tags": [
+          "loot"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "An NPC the party has met sends a NABRZ DM during the rest. Narrator picks which NPC and what they say (recommend Pennybrook checking in).",
+        "tags": [
+          "nabrz",
+          "flavor"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "Garland walks past on a rounds-check. If acknowledged with a 'how are you,' +1 Loyalty star (Garland card).",
+        "tags": [
+          "loyalty",
+          "choice"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "Mid-rest, the PA pipes in soft Muzak that adjusts to the mood of the room. WIS TN 11 to keep your edge; otherwise, lose 1 round of action economy on the next encounter (start surprised).",
+        "tags": [
+          "hazard",
+          "wis"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 1,
+        "result": "INCONVENIENT: A custodial drone vacuums up one item that was left on the floor near the resting party. Narrator picks something low-stakes but the player will notice.",
+        "tags": [
+          "hazard",
+          "loot"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 1,
+        "result": "INCONVENIENT: The rest is interrupted. Roll for an Encounter from this zone's encounter modifier table during the rest. Recover only half HP.",
+        "tags": [
+          "hazard",
+          "combat",
+          "urgent"
+        ]
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "INCONVENIENT: A NABRZ post by @MALLCOP_4 appears mid-rest. It says: 'Visitors in Sector 7 noted. Continued presence under review.' No mechanical effect yet. Make Doug note it.",
+        "tags": [
+          "urgent",
+          "flavor",
+          "nabrz"
+        ]
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "INCONVENIENT: The rest is unrestful. Both Crawlers wake at -2 max HP for the next scene (mental fatigue). Returns next rest.",
+        "tags": [
+          "hazard",
+          "major"
+        ]
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "ABSURD: A pretzel from Auntie Anne's drifts past on a roomba. It is still warm. Whoever catches it gets a Common-tier 'Pretzel of Mild Restoration' (+1d4 HP, single use, cinnamon sugar).",
+        "tags": [
+          "funny",
+          "loot"
+        ]
+      },
+      {
+        "id": 13,
+        "weight": 1,
+        "result": "ABSURD: Tasha materializes silently next to whoever is on watch. 'You snore.' She vanishes. +1 Loyalty (Tasha) if the Crawler responds graciously.",
+        "tags": [
+          "funny",
+          "loyalty",
+          "flavor"
+        ]
+      },
+      {
+        "id": 14,
+        "weight": 1,
+        "result": "ABSURD: A mall mascot costume (Hot Dog On A Stick) walks past inhabited by no one. It waves. NABRZ explodes with discourse for 3 minutes.",
+        "tags": [
+          "funny",
+          "nabrz",
+          "fame"
+        ]
+      }
+    ],
+    "kill_enemy": [
+      {
+        "id": 1,
+        "weight": 4,
+        "result": "Clean kill. No complications. Roll on loot table for the zone.",
+        "tags": [
+          "loot",
+          "neutral"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "The PA congratulates the killer by name. Viewers +1d6\u00d720. NABRZ records the kill with at least one snarky comment.",
+        "tags": [
+          "fame",
+          "nabrz"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "The kill is messy enough that the cleaning crew (automated) shows up immediately. They demand a 'maintenance fee' of 5 gold or -1 Loyalty star.",
+        "tags": [
+          "choice",
+          "loyalty"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "The kill drops a Loyalty Card alongside its loot. From a vendor the party hasn't met. Card has 1 star. Indicates an NPC the floor wants them to find.",
+        "tags": [
+          "loyalty",
+          "loot"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "An onlooker \u2014 a fellow Crawler the party hasn't met \u2014 clapped slowly from a doorway. Vanishes before they can be spoken to. Narrator: log this NPC for later (Floor 2+).",
+        "tags": [
+          "flavor",
+          "hook"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "The kill triggers a 'Customer Appreciation' alert on NABRZ. Players gain +5 Viewers per kill in this combat. Persists until end of scene.",
+        "tags": [
+          "fame",
+          "buff",
+          "nabrz"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "The corpse glitches \u2014 it was apparently a holographic projection. Loot is half (round down). No body. Narrator: roll secretly to see if it respawns elsewhere.",
+        "tags": [
+          "funny",
+          "loot",
+          "minor"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 1,
+        "result": "INCONVENIENT: The kill summons mall security. 1d4 rounds before they arrive. Players must decide: hide, flee, or fight (E6 stat block).",
+        "tags": [
+          "combat",
+          "urgent",
+          "hazard"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 1,
+        "result": "INCONVENIENT: Killing this enemy violates 'store policy.' -2 Loyalty stars across the nearest NPC's card. (Narrator picks which NPC's card based on proximity.)",
+        "tags": [
+          "loyalty",
+          "hazard"
+        ]
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "INCONVENIENT: A NABRZ post immediately roasts the kill. Viewer loss: 1d6\u00d75. (The performance was not appreciated.)",
+        "tags": [
+          "fame",
+          "nabrz",
+          "hazard"
+        ]
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "ABSURD: The corpse, before despawning, looks up at the killer and says, very politely: 'Thank you for shopping with us.' Hold for one beat. Players gain 1 Follower automatically (a viewer crystallized).",
+        "tags": [
+          "funny",
+          "fame"
+        ]
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "ABSURD: The corpse contains a fully formed receipt. It lists every item the deceased was carrying, plus an unitemized 'service charge' of 100 gold. Players cannot collect the gold but the receipt is real.",
+        "tags": [
+          "funny",
+          "flavor"
+        ]
+      }
+    ],
+    "linger": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "Time passes. Nothing changes. The mall is patient.",
+        "tags": [
+          "neutral"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "An NPC the party has met posts to NABRZ within sight: 'Are they... just standing there?' No mechanical effect, but a Loyalty star may be at risk if lingering continues.",
+        "tags": [
+          "nabrz",
+          "flavor"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "A wandering customer service representative (automaton) approaches and asks if anyone needs help. CHA TN 11 to dismiss politely (+1 Loyalty). Failure or rudeness: -1 Loyalty.",
+        "tags": [
+          "loyalty",
+          "cha",
+          "choice"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "The PA pages the party by name and asks them to please move along. No penalty if they do. If they continue lingering: -1 Loyalty.",
+        "tags": [
+          "loyalty",
+          "minor"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "A child mannequin in a nearby store window slowly turns to look at the party. Holding the gaze: WIS TN 12 or 1 round of disorientation in the next combat.",
+        "tags": [
+          "hazard",
+          "wis",
+          "funny"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "A flyer floats from above and lands at the party's feet. It's a coupon for 10% off the next NPC interaction. Single use.",
+        "tags": [
+          "loot",
+          "loyalty"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 1,
+        "result": "INCONVENIENT: A countdown appears on every screen in the area. Starts at 60 seconds. At 0, the chaos clock rolls. Lingering longer triggers the chaos event early.",
+        "tags": [
+          "urgent",
+          "hazard"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 1,
+        "result": "INCONVENIENT: The party's NABRZ posts get throttled by @MALLCOP_4. Disadvantage on the next Viewer-generation roll.",
+        "tags": [
+          "fame",
+          "nabrz",
+          "hazard"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 1,
+        "result": "INCONVENIENT: A 'maintenance closure' rolls down a metal gate, blocking the most direct path forward. Workaround exists but costs 10 minutes (in-fiction) and 5 Viewers.",
+        "tags": [
+          "hazard",
+          "environmental"
+        ]
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "INCONVENIENT: Two more shopping carts (E4 stat block, each HP 6) round the corner aggressively. Initiative.",
+        "tags": [
+          "combat",
+          "urgent"
+        ]
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "ABSURD: A janitor passes pushing a cart full of broken neon signs. He nods at the party. 'Don't mind the rats.' He keeps walking. No rats appear.",
+        "tags": [
+          "funny",
+          "flavor"
+        ]
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "ABSURD: One Crawler's reflection in a nearby store window does something the Crawler is not doing \u2014 finger-guns at the party, then nods knowingly. WIS TN 12 to remember this happened.",
+        "tags": [
+          "funny",
+          "wis",
+          "flavor"
+        ]
+      },
+      {
+        "id": 13,
+        "weight": 1,
+        "result": "ABSURD: A spontaneous flash mob of mall mannequins forms in the corridor. 45-second routine. Crawlers gain 2d6\u00d710 Viewers if they applaud. Penalty: -1d4 Viewers if they attack the mannequins.",
+        "tags": [
+          "funny",
+          "fame",
+          "choice"
+        ]
+      }
+    ],
+    "open_loot": [
+      {
+        "id": 1,
+        "weight": 4,
+        "result": "Standard loot. Roll on the zone's loot table.",
+        "tags": [
+          "loot",
+          "neutral"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "The loot is in original 2000s-era retail packaging. Requires action to unbox (DEX TN 9, easy). On critical success, an extra Common item is inside.",
+        "tags": [
+          "loot",
+          "dex",
+          "funny"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "Receipt attached: this item was returned 14 times before being dropped here. It has commentary scrawled on the receipt. Narrator: improvise a snarky note. No mechanical effect.",
+        "tags": [
+          "flavor",
+          "loot"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "The loot is gift-wrapped, addressed to one specific Crawler by name. That Crawler gains +1 Loyalty (with whichever NPC narratively makes sense).",
+        "tags": [
+          "loyalty",
+          "loot",
+          "flavor"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "Loot is part of a 'Buy One Get One' display. Roll twice on the zone's tier. Take both items, but each costs -1 Loyalty star (you didn't pay).",
+        "tags": [
+          "loot",
+          "choice",
+          "loyalty"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "A small drone delivers the loot mid-air. NABRZ post appears about the airdrop. +50 Viewers.",
+        "tags": [
+          "loot",
+          "fame",
+          "nabrz"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 1,
+        "result": "INCONVENIENT: It's a mimic. Initiative. (Mimic stat block: HP 18, 1d8 bite, AC 12. On kill, normal loot drops.)",
+        "tags": [
+          "combat",
+          "funny",
+          "hazard"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 1,
+        "result": "INCONVENIENT: The loot is in a locked display case. STR TN 13 to break, DEX TN 12 to pick the case. Breaking it: -1 Loyalty (vandalism). Picking it: no penalty.",
+        "tags": [
+          "choice",
+          "str",
+          "dex"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 1,
+        "result": "INCONVENIENT: An anti-theft tag is embedded. Triggers an alarm when leaving the area unless removed (DEX TN 13). Alarm summons mall security (E6 stat block).",
+        "tags": [
+          "hazard",
+          "dex",
+          "urgent"
+        ]
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "ABSURD: The loot is in a box labeled 'CLEARANCE \u2014 DO NOT OPEN.' Opening it: roll once on Chaos tier. Closing it without looking: -5 Viewers (boring TV).",
+        "tags": [
+          "loot",
+          "chaos",
+          "funny",
+          "choice"
+        ]
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "ABSURD: A small card on the loot reads 'AS SEEN ON NABRZ.' This item generates +1 Viewer per minute while it's equipped, but every NPC will compliment it.",
+        "tags": [
+          "loot",
+          "fame",
+          "funny"
+        ]
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "ABSURD: The loot is a single sock. It is, in fact, a Legendary single sock. Roll once on the Legendary tier \u2014 whatever it is, the appearance is 'a single sock.'",
+        "tags": [
+          "loot",
+          "funny",
+          "legendary"
+        ]
+      }
+    ]
+  },
+  "chaos_clock": {
+    "min_interval_minutes": 25,
+    "max_interval_minutes": 50,
+    "events": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "PA ANNOUNCEMENT: 'Flash sale at Pennybrook Kiosk \u2014 50% off all almonds for the next ten minutes!' Pennybrook is suddenly mobbed by 1d4 phantom shoppers (no combat, just chaos). If players visit: extra Loyalty star with him.",
+        "tags": [
+          "sponsor",
+          "choice",
+          "loyalty"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "RULE CHANGE: For the next 15 minutes, all NABRZ posts are 'sponsored content' \u2014 anything the party posts costs 2 Viewers but reaches double the audience. Narrator: roll the math live.",
+        "tags": [
+          "rule_change",
+          "nabrz",
+          "fame"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "COMPETITION: Speed Shop. First Crawler to find an obscure item (narrator picks: 'a left-handed scissors,' 'a copy of 1996 People Magazine,' etc.) within 15 minutes earns 200 Viewers and a Loyalty star (random NPC).",
+        "tags": [
+          "competition",
+          "fame",
+          "loyalty"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "SPONSOR ALERT: GalacticBrew offers 250 Viewers + a Common item to whoever drinks the suspicious purple beverage Pennybrook is offering at his kiosk. (See Floor 1 Sponsor Pool: 'First Sip.') 30% the beverage is hostile (1d6 damage + nausea).",
+        "tags": [
+          "sponsor",
+          "choice",
+          "hazard"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "ENVIRONMENTAL: The lights in the entire zone shift to amber 'closing time' tint for 20 minutes. -1 to all WIS-based perception rolls, +2 to stealth rolls. Spooky.",
+        "tags": [
+          "environmental",
+          "buff",
+          "debuff"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "MALL POLICY CHANGE: New rule for the day \u2014 'no running.' Any Crawler who uses Dash this scene takes -1 Loyalty per use, but gains +1d4 Viewers per use (running is good TV).",
+        "tags": [
+          "rule_change",
+          "loyalty",
+          "fame"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "NABRZ TRENDING: A post about the Crawlers goes viral within the mall. +1d10\u00d710 Viewers. Source is anonymous, but Tasha is grinning later.",
+        "tags": [
+          "nabrz",
+          "fame",
+          "flavor"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 8,
+        "weight": 2,
+        "result": "NPC DRAMA: The Food Court People have a public spat on NABRZ. Crawlers who weigh in earn or lose Loyalty depending on which side they take. Sbarro Sal vs. Hot Dog Dana over an ice machine. Cinnabon Unit 7 is silently mortified.",
+        "tags": [
+          "loyalty",
+          "choice",
+          "nabrz"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 9,
+        "weight": 2,
+        "result": "PROMOTIONAL EVENT: The mall hosts a 'meet & greet' with a cardboard celebrity standee. CHA TN 12 to perform charmingly: 500 Viewers. Failure: -100 Viewers (cringe).",
+        "tags": [
+          "fame",
+          "cha",
+          "choice"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "INCONVENIENT: A fire drill begins. Sprinklers in the current zone activate for 10 minutes. -2 to all attack rolls (slippery), no fire-based spells function. Players can use the cover to slip past one encounter unnoticed.",
+        "tags": [
+          "hazard",
+          "environmental",
+          "major"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "INCONVENIENT: GARLAND PAGES THE PARTY. He wants a word in his office. Refusing: -3 Loyalty (Garland). Accepting: 1 scene of him discussing 'concerns' about Crawler behavior. He gives them one piece of useful Floor 1 info (narrator picks).",
+        "tags": [
+          "loyalty",
+          "choice",
+          "npc"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "INCONVENIENT: NABRZ moderator @MALLCOP_4 posts a 'Code Yellow' for the party. Mall security (E6) starts patrolling within their zone. 40% chance of an unscheduled encounter for the rest of this session.",
+        "tags": [
+          "urgent",
+          "hazard",
+          "nabrz"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 13,
+        "weight": 1,
+        "result": "INCONVENIENT: The escalators go down for maintenance. Vertical movement between zones requires the hidden stairwell or a 60-minute wait. Players who haven't found the stairwell are pinned to their current floor.",
+        "tags": [
+          "hazard",
+          "environmental",
+          "major"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 14,
+        "weight": 1,
+        "result": "INCONVENIENT: A 'storewide loyalty audit' \u2014 all Crawlers must roll WIS TN 12 or lose 1 Loyalty star from a random card (narrator picks).",
+        "tags": [
+          "loyalty",
+          "hazard",
+          "wis"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 15,
+        "weight": 2,
+        "result": "COMPETITION: The PA announces a 'Best Dressed Crawler' contest. Each player rolls CHA. Highest wins 300 Viewers and +1 Loyalty (any card of choice).",
+        "tags": [
+          "competition",
+          "fame",
+          "loyalty",
+          "cha"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 16,
+        "weight": 1,
+        "result": "ABSURD: A pop song from 1998 starts playing on the PA at high volume. Cannot be silenced. Every Crawler must make a DEX TN 11 or do an unintentional dance move on their next turn (purely cosmetic, but it's on NABRZ).",
+        "tags": [
+          "funny",
+          "dex",
+          "fame"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 17,
+        "weight": 1,
+        "result": "ABSURD: A pop-up shop appears: 'EVERYTHING MUST GO \u2014 ETERNALLY.' It sells one item from each tier (including Chaos) for double price. Vanishes after 10 minutes.",
+        "tags": [
+          "loot",
+          "choice",
+          "funny"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 18,
+        "weight": 1,
+        "result": "ABSURD: An accidental NABRZ broadcast plays Garland singing in his office. Garland is mortified for the rest of the session. +1 Loyalty (Garland) to whoever encourages him kindly.",
+        "tags": [
+          "funny",
+          "loyalty",
+          "flavor"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 19,
+        "weight": 1,
+        "result": "ABSURD: Tasha appears in the most inconvenient possible location and asks for a moment. She wants to show one Crawler something specific. Narrator's choice (a vending machine that gives free items, a hidden Loyalty Card vending dispenser, etc.).",
+        "tags": [
+          "funny",
+          "loyalty",
+          "npc"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 20,
+        "weight": 1,
+        "result": "ABSURD: A mall Santa (out of season \u2014 it's May) appears at the food court holding a clipboard. He has Loyalty Card audit authority. He gives the party an extra 1d4 stars but charges them 100 gold collectively. Vanishes after.",
+        "tags": [
+          "funny",
+          "loyalty",
+          "choice"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 21,
+        "weight": 1,
+        "result": "BOSS FORESHADOW: Every screen in the zone flickers, briefly displaying static. The lights drop for one second. PA goes silent for 5 seconds, then resumes its normal patter. Players who roll WIS TN 13: they hear a faint mechanical hum from below.",
+        "tags": [
+          "foreshadow",
+          "wis",
+          "major"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 22,
+        "weight": 1,
+        "result": "SECRET DROP: A wall panel pops open near the party. Inside: a single Rare item (narrator's choice from rare tier). Closes after 60 seconds.",
+        "tags": [
+          "loot",
+          "rare",
+          "urgent"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 23,
+        "weight": 1,
+        "result": "RULE CHANGE: For 20 minutes, all Loyalty Card transactions earn double stars but cost twice as much. Affects all four named NPCs.",
+        "tags": [
+          "rule_change",
+          "loyalty",
+          "major"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 24,
+        "weight": 1,
+        "result": "MALL HOLIDAY: A surprise mall-wide 'sidewalk sale' kicks off. All Common and Uncommon loot drops gain +1 to their tier. Lasts 30 minutes.",
+        "tags": [
+          "loot",
+          "fame",
+          "buff"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 25,
+        "weight": 1,
+        "result": "DARK MOMENT: The PA reads, in Walda's not-yet-revealed real voice: 'I'm getting tired.' Only the lowest-WIS Crawler hears it. WIS TN 13 to remember it later. Narrator: log this as a foreshadow checkpoint.",
+        "tags": [
+          "foreshadow",
+          "wis",
+          "major"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 26,
+        "weight": 1,
+        "result": "ABSURD: The mall directory updates to add 'CRAWLER QUARTERS \u2014 UPPER LEVEL.' It's a real, semi-furnished apartment for the Crawlers. Free safe room with a working TV that plays nothing but mall security footage.",
+        "tags": [
+          "loot",
+          "safe_room",
+          "funny"
+        ],
+        "one_shot": true
+      }
+    ]
+  },
+  "loot_tables": {
+    "tiers": {
+      "common": {
+        "weight": 50,
+        "items": [
+          {
+            "id": 1,
+            "name": "Pennybrook Cinnamon-Roasted Almonds (1 bag)",
+            "description": "Heals 1d4 HP. Bag bears a snack-grade weapon tag. When 3+ bags are eaten/carried by one Crawler, gain +1 STR for 10 minutes (sugar rush). Tags: snack, sweet, mall, common.",
+            "tags": [
+              "consumable",
+              "healing",
+              "mall"
+            ],
+            "value": 10
+          },
+          {
+            "id": 2,
+            "name": "Mall Discount Coupon (10% off)",
+            "description": "Spent during a vendor interaction to reduce cost by 10%. Single use. Adds +1 Loyalty when used appropriately.",
+            "tags": [
+              "consumable",
+              "discount",
+              "mall"
+            ],
+            "value": 5
+          },
+          {
+            "id": 3,
+            "name": "Pretzel of Mild Restoration",
+            "description": "Heals 1d4 HP. Smells incredible.",
+            "tags": [
+              "consumable",
+              "healing",
+              "mall"
+            ],
+            "value": 15
+          },
+          {
+            "id": 4,
+            "name": "Plastic Mall Sword (Toy)",
+            "description": "1d4 damage, breaks on a roll of 1. Looks ridiculous. +1 to CHA rolls while wielded in a non-combat scene.",
+            "tags": [
+              "weapon",
+              "melee",
+              "mall",
+              "funny"
+            ],
+            "value": 20
+          },
+          {
+            "id": 5,
+            "name": "Sears Memorial Polo Shirt",
+            "description": "Light armor (+1 AC). Has 'Sears Associate' embroidered on the chest. NPCs treat the wearer as 'staff' on a passing glance.",
+            "tags": [
+              "armor",
+              "light",
+              "mall"
+            ],
+            "value": 30
+          },
+          {
+            "id": 6,
+            "name": "NABRZ Sticker Pack",
+            "description": "Free use during a NABRZ post: +1d6 Viewers per use. 3 stickers per pack.",
+            "tags": [
+              "consumable",
+              "fame",
+              "nabrz"
+            ],
+            "value": 15
+          },
+          {
+            "id": 7,
+            "name": "Bath & Body Works Candle (Vanilla)",
+            "description": "Used as a light source for 2 hours. Burned in combat: 1 round of perfumed cover, advantage on stealth.",
+            "tags": [
+              "consumable",
+              "light",
+              "mall"
+            ],
+            "value": 12
+          },
+          {
+            "id": 8,
+            "name": "Foot Locker Sneakers (Used)",
+            "description": "+5 ft movement while worn. They squeak.",
+            "tags": [
+              "armor",
+              "boots",
+              "mall",
+              "movement"
+            ],
+            "value": 25
+          },
+          {
+            "id": 9,
+            "name": "Mall Map (Out of Date)",
+            "description": "Reveals one zone of the floor map. Use on the Discovery Index.",
+            "tags": [
+              "map",
+              "exploration",
+              "mall"
+            ],
+            "value": 18
+          },
+          {
+            "id": 10,
+            "name": "Vending Machine Token",
+            "description": "Insert into any vending machine to roll once on Common tier. Single use.",
+            "tags": [
+              "consumable",
+              "loot",
+              "mall"
+            ],
+            "value": 8
+          }
+        ]
+      },
+      "uncommon": {
+        "weight": 30,
+        "items": [
+          {
+            "id": 1,
+            "name": "Spencer's Spencer's Stick",
+            "description": "A novelty walking stick from Spencer's Gifts. 1d6 damage, +1 to all CHA rolls when wielded as a prop. Tags: weapon, mall, charisma, funny.",
+            "tags": [
+              "weapon",
+              "melee",
+              "charisma",
+              "mall"
+            ],
+            "value": 75
+          },
+          {
+            "id": 2,
+            "name": "Mall Security Walkie",
+            "description": "Tune into mall security frequency. Reveals the location of one mall security patrol in the current zone. Single charge per session.",
+            "tags": [
+              "tool",
+              "scouting",
+              "mall"
+            ],
+            "value": 80
+          },
+          {
+            "id": 3,
+            "name": "Cinnabon Frosting Grenade",
+            "description": "Single-use thrown weapon. 2d4 damage in a 10-ft radius. Targets are 'frosted' \u2014 disadvantage on stealth for 5 minutes (you smell incredible and visible).",
+            "tags": [
+              "weapon",
+              "thrown",
+              "mall",
+              "funny"
+            ],
+            "value": 100
+          },
+          {
+            "id": 4,
+            "name": "Hot Dog On A Stick Costume",
+            "description": "Light armor (+1 AC). Wearer gains +4d10 Viewers per scene worn but -1 to all attack rolls. Sponsor-eligible.",
+            "tags": [
+              "armor",
+              "light",
+              "mall",
+              "fame",
+              "funny"
+            ],
+            "value": 120
+          },
+          {
+            "id": 5,
+            "name": "Mannequin Mask",
+            "description": "Hand-painted, vaguely smiling. While worn: WIS TN 12 from anyone trying to read your face. Three uses before the paint cracks.",
+            "tags": [
+              "armor",
+              "head",
+              "stealth",
+              "mall"
+            ],
+            "value": 90
+          },
+          {
+            "id": 6,
+            "name": "Auntie Anne's Eternal Pretzel",
+            "description": "Heals 2d6 HP. Refills once per session (never runs out \u2014 that's the whole point).",
+            "tags": [
+              "consumable",
+              "healing",
+              "mall",
+              "rare_use"
+            ],
+            "value": 110
+          },
+          {
+            "id": 7,
+            "name": "Sears Catalog (1994)",
+            "description": "Reading this in a Safe Room: +1 to one Skill Advancement roll this session. One-time use per catalog.",
+            "tags": [
+              "consumable",
+              "training",
+              "mall"
+            ],
+            "value": 70
+          },
+          {
+            "id": 8,
+            "name": "Loyalty Card Multiplier",
+            "description": "Single-use item. Used during a Loyalty Card interaction: doubles stars earned (+ or -). Save for high-stakes interactions.",
+            "tags": [
+              "consumable",
+              "loyalty",
+              "mall"
+            ],
+            "value": 95
+          }
+        ]
+      },
+      "rare": {
+        "weight": 12,
+        "items": [
+          {
+            "id": 1,
+            "name": "Garland's Spare Lanyard",
+            "description": "Worn as accessory. While worn: +2 to all CHA rolls with mall staff (Garland, Pennybrook, Food Court People). Counts as a Loyalty Card with all of them for +3 stars passive.",
+            "tags": [
+              "accessory",
+              "charisma",
+              "loyalty",
+              "mall"
+            ],
+            "value": 350
+          },
+          {
+            "id": 2,
+            "name": "Pennybrook's Almond Crusher (Repurposed)",
+            "description": "Two-handed weapon. 2d6 damage. While wielded: +1 to all 'snack' tagged item uses. Has a small Pennybrook logo on the grip.",
+            "tags": [
+              "weapon",
+              "melee",
+              "two_handed",
+              "mall",
+              "snack"
+            ],
+            "value": 400
+          },
+          {
+            "id": 3,
+            "name": "Cinnabon Unit 7's Spare Recipe Card",
+            "description": "Permanently learns the 'Frost' minor spell (1d4 cold damage, ranged, no MP cost, 1/scene). Cinnabon Unit 7 will be very offended if used in combat \u2014 they expect the holder to bake.",
+            "tags": [
+              "accessory",
+              "spell",
+              "mall"
+            ],
+            "value": 450
+          },
+          {
+            "id": 4,
+            "name": "Cardboard Standee Compass",
+            "description": "While carried: detects the nearest hidden room or item on the current zone. Single charge per session.",
+            "tags": [
+              "tool",
+              "exploration",
+              "mall",
+              "funny"
+            ],
+            "value": 380
+          },
+          {
+            "id": 5,
+            "name": "Tasha's Recommendation",
+            "description": "A note. Hand it to any NPC: their card jumps to 5 stars immediately. Single use, single NPC.",
+            "tags": [
+              "consumable",
+              "loyalty",
+              "mall",
+              "major"
+            ],
+            "value": 500
+          },
+          {
+            "id": 6,
+            "name": "Mall Directory Implant",
+            "description": "Permanent. While installed (medical procedure required, available Floor 3+): party can read the mall directory anywhere on the floor. Effectively reveals the full Discovery Index.",
+            "tags": [
+              "implant",
+              "exploration",
+              "mall"
+            ],
+            "value": 600
+          }
+        ]
+      },
+      "legendary": {
+        "weight": 5,
+        "items": [
+          {
+            "id": 1,
+            "name": "Walda's Filament",
+            "description": "Boss-drop. Permanent +2 INT amulet. Counts as the keystone for the Floor 1 Trophy display in Personal Space (unlocks Floor 3+). Glows faintly when near other generators.",
+            "tags": [
+              "accessory",
+              "intelligence",
+              "boss_drop",
+              "mall"
+            ],
+            "value": 2000
+          },
+          {
+            "id": 2,
+            "name": "The Loyalty Card Of Cards",
+            "description": "A platinum-tier Loyalty Card. While held: all Loyalty Card stars count double. Floor 1 only, sadly \u2014 it's a Floor 1 keepsake.",
+            "tags": [
+              "accessory",
+              "loyalty",
+              "mall",
+              "major"
+            ],
+            "value": 1500
+          },
+          {
+            "id": 3,
+            "name": "PA Override Microphone",
+            "description": "Single use. Lets the holder speak through the mall PA system for 60 seconds. NABRZ trends within seconds of use. Viewer gain: 2d20\u00d7100.",
+            "tags": [
+              "consumable",
+              "fame",
+              "mall",
+              "major"
+            ],
+            "value": 1800
+          },
+          {
+            "id": 4,
+            "name": "Sears Memorial Mannequin (Animate)",
+            "description": "Pet/companion. The mannequin is fully animate, friendly, and follows the holder. Acts as a low-tier ally in combat (HP 30, AC 14, 1d8 attack). Cannot leave Floor 1. (Players will learn this only on attempted descent.)",
+            "tags": [
+              "companion",
+              "ally",
+              "mall",
+              "tragic"
+            ],
+            "value": 1700
+          }
+        ]
+      },
+      "chaos": {
+        "weight": 3,
+        "items": [
+          {
+            "id": 1,
+            "name": "The Eternal Cinnabon",
+            "description": "A single Cinnabon that regenerates after eating. Heals 3d6 HP, once per scene. Cannot be discarded \u2014 it always returns to your inventory. Cinnabon Unit 7 takes credit.",
+            "tags": [
+              "consumable",
+              "healing",
+              "mall",
+              "chaos"
+            ],
+            "value": 999
+          },
+          {
+            "id": 2,
+            "name": "Holographic Mall Cop",
+            "description": "Single use. Summons a hologram of a mall cop that distracts one enemy for 1d4 rounds. The hologram quotes mall security training videos. Has a 5% chance of becoming sentient and following the party.",
+            "tags": [
+              "consumable",
+              "summon",
+              "mall",
+              "chaos"
+            ],
+            "value": 1200
+          },
+          {
+            "id": 3,
+            "name": "Black Friday Survivor's Whistle",
+            "description": "Single use. Blow it: all combatants (allies and enemies) gain initiative and frenzy for 1 round. -2 to all rolls but free Dash + Attack each. Chaos.",
+            "tags": [
+              "consumable",
+              "combat",
+              "mall",
+              "chaos"
+            ],
+            "value": 1100
+          },
+          {
+            "id": 4,
+            "name": "Limited Edition Beanie Baby (Ty, 1998)",
+            "description": "Worth nothing in the dungeon economy. Worth EVERYTHING to one specific collector NPC that may or may not appear later. Holding it: +1d6 to your final Loyalty Tally at the boss fight.",
+            "tags": [
+              "accessory",
+              "collectible",
+              "mall",
+              "chaos"
+            ],
+            "value": 25
+          },
+          {
+            "id": 5,
+            "name": "Inflatable Solar System",
+            "description": "An inflatable Earth-and-planets set from a defunct Discovery Channel store. Functions as a shield (+2 AC). On any roll of 20, the wearer briefly believes they understand the universe. +1 INT permanently the first time it triggers.",
+            "tags": [
+              "armor",
+              "shield",
+              "mall",
+              "chaos"
+            ],
+            "value": 800
+          }
+        ]
+      }
+    },
+    "zones": {
+      "zone_a": {
+        "name": "Entrance & Lower Concourse",
+        "tier_override": null,
+        "bonus_items": [
+          {
+            "id": 100,
+            "name": "Pennybrook Loyalty Card (Starter)",
+            "description": "Starter Pennybrook card. 1 star. Drops automatically on first Pennybrook interaction.",
+            "tags": [
+              "loyalty_card",
+              "mall",
+              "pennybrook"
+            ],
+            "value": 0
+          }
+        ]
+      },
+      "zone_b": {
+        "name": "Food Court",
+        "tier_override": {
+          "uncommon": 35,
+          "rare": 15
+        },
+        "bonus_items": [
+          {
+            "id": 101,
+            "name": "Food Court Loyalty Punch Card (Communal)",
+            "description": "Drops in Food Court zone. Acts as a single Loyalty Card shared with all three Food Court People. 1 star starter.",
+            "tags": [
+              "loyalty_card",
+              "mall",
+              "food_court"
+            ],
+            "value": 0
+          }
+        ]
+      },
+      "zone_c": {
+        "name": "Upper Concourse & The Sears",
+        "tier_override": {
+          "rare": 18,
+          "legendary": 8
+        },
+        "bonus_items": [
+          {
+            "id": 102,
+            "name": "Sears Memorial Photograph",
+            "description": "A framed photo of the Sears in 1994. Only drops in The Sears. Counts as a Crescendo trigger if respectfully preserved.",
+            "tags": [
+              "flavor",
+              "crescendo",
+              "mall"
+            ],
+            "value": 100
+          }
+        ]
+      },
+      "zone_d": {
+        "name": "Mechanical Sub-Level",
+        "tier_override": {
+          "rare": 20,
+          "legendary": 10,
+          "chaos": 5
+        },
+        "bonus_items": []
+      },
+      "boss_zone": {
+        "name": "Generator Room (Walda)",
+        "tier_override": {
+          "legendary": 25,
+          "chaos": 8
+        },
+        "bonus_items": [
+          {
+            "id": 200,
+            "name": "Walda's Filament",
+            "description": "Boss drop \u2014 see legendary tier entry for full description.",
+            "tags": [
+              "accessory",
+              "intelligence",
+              "boss_drop",
+              "mall"
+            ],
+            "value": 2000
+          }
+        ]
+      }
+    }
+  },
+  "encounter_modifiers": {
+    "trigger_chance_percent": 50,
+    "modifiers": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "Reinforcements arrive in 2 rounds. (Narrator: 1d4 additional minor enemies.)",
+        "tags": [
+          "combat",
+          "escalation"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "The PA narrates the fight as a 'limited-time customer service training video.' Mild advantage to whichever side is currently winning (the narrator favors the underdog visually but mechanically the PA tilts the volume to whoever's drawing the most Viewers).",
+        "tags": [
+          "environmental",
+          "fame"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "A shopper-bystander (NPC, AC 10, HP 4) wanders into the combat zone obliviously. They take damage on stray attacks and the party loses 1 Loyalty if the bystander dies.",
+        "tags": [
+          "npc",
+          "loyalty",
+          "hazard"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "Slippery floor \u2014 the cleaning crew ran a wax cycle. All DEX checks and movement: -1 for the fight. Funny on a roll of 1.",
+        "tags": [
+          "environmental",
+          "hazard",
+          "dex"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "The fight is happening in front of a window display. NABRZ live-streams the encounter. +1d6\u00d720 Viewers, +1d4\u00d75 Followers if the party performs well.",
+        "tags": [
+          "fame",
+          "nabrz"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "Music shift \u2014 the PA cuts to 'fight music' (an instrumental cover of a 1990s rock song). +1 to one Crawler's damage rolls this fight. Narrator picks.",
+        "tags": [
+          "environmental",
+          "buff",
+          "funny"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "Crowd forms. 1d6 phantom shoppers gather. They cheer. They are slightly distracting. -1 to CHA-based combat actions.",
+        "tags": [
+          "environmental",
+          "fame",
+          "debuff"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 2,
+        "result": "Mall sprinklers trigger mid-fight. Lasts 3 rounds. Fire-tagged abilities deal half damage. Lightning-tagged abilities deal +1d4. Floor is slick.",
+        "tags": [
+          "environmental",
+          "hazard"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 1,
+        "result": "INCONVENIENT: An NPC the party knows joins on the enemy side. Visibly upset about it. Their card with the party goes to 0 stars. Recoverable later if they survive.",
+        "tags": [
+          "npc",
+          "loyalty",
+          "major"
+        ]
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "INCONVENIENT: A loot crate falls from above mid-fight. Whoever picks it up loses one round of actions. Crate contains Common loot.",
+        "tags": [
+          "loot",
+          "choice",
+          "hazard"
+        ]
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "INCONVENIENT: Mall security (E6 stat block) arrives within 1d4 rounds to 'restore order.' Treats all combatants as suspects.",
+        "tags": [
+          "combat",
+          "escalation",
+          "urgent"
+        ]
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "INCONVENIENT: An NPC posts a hostile NABRZ comment about the party's combat performance mid-fight. -1d10\u00d75 Viewers. The party can see the post live.",
+        "tags": [
+          "fame",
+          "nabrz",
+          "hazard"
+        ]
+      },
+      {
+        "id": 13,
+        "weight": 1,
+        "result": "ABSURD: A Roomba enters the combat zone. Its presence is comically distracting. +1 to all CHA rolls in this fight for the side that incorporates it into their tactics. Players: bonus Viewers for creativity.",
+        "tags": [
+          "funny",
+          "fame"
+        ]
+      },
+      {
+        "id": 14,
+        "weight": 1,
+        "result": "ABSURD: A 1990s movie quote plays from a forgotten kiosk loudspeaker. Players who quote it back get +1 to attack rolls that round. Narrator picks the quote.",
+        "tags": [
+          "funny",
+          "buff",
+          "fame"
+        ]
+      },
+      {
+        "id": 15,
+        "weight": 1,
+        "result": "ABSURD: Garland appears mid-fight to ask the combatants to keep the noise down. WIS TN 12 to ignore him. If a Crawler stops to apologize: +1 Loyalty (Garland), but lose one round of action economy.",
+        "tags": [
+          "funny",
+          "loyalty",
+          "npc"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?><w:document xmlns:wpc="http://schemas.microsoft.com/office/word/2010/wordprocessingCanvas" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:r="http://schemas.openxmlformats.org/officeDocument/2006/relationships" xmlns:m="http://schemas.openxmlformats.org/officeDocument/2006/math" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:wp14="http://schemas.microsoft.com/office/word/2010/wordprocessingDrawing" xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing" xmlns:w10="urn:schemas-microsoft-com:office:word" xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main" xmlns:w14="http://schemas.microsoft.com/office/word/2010/wordml" xmlns:w15="http://schemas.microsoft.com/office/word/2012/wordml" xmlns:wpg="http://schemas.microsoft.com/office/word/2010/wordprocessingGroup" xmlns:wpi="http://schemas.microsoft.com/office/word/2010/wordprocessingInk" xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml" xmlns:wps="http://schemas.microsoft.com/office/word/2010/wordprocessingShape" xmlns:cx="http://schemas.microsoft.com/office/drawing/2014/chartex" xmlns:cx1="http://schemas.microsoft.com/office/drawing/2015/9/8/chartex" xmlns:cx2="http://schemas.microsoft.com/office/drawing/2015/10/21/chartex" xmlns:cx3="http://schemas.microsoft.com/office/drawing/2016/5/9/chartex" xmlns:cx4="http://schemas.microsoft.com/office/drawing/2016/5/10/chartex" xmlns:cx5="http://schemas.microsoft.com/office/drawing/2016/5/11/chartex" xmlns:cx6="http://schemas.microsoft.com/office/drawing/2016/5/12/chartex" xmlns:cx7="http://schemas.microsoft.com/office/drawing/2016/5/13/chartex" xmlns:cx8="http://schemas.microsoft.com/office/drawing/2016/5/14/chartex" xmlns:aink="http://schemas.microsoft.com/office/drawing/2016/ink" xmlns:am3d="http://schemas.microsoft.com/office/drawing/2017/model3d" xmlns:w16cex="http://schemas.microsoft.com/office/word/2018/wordml/cex" xmlns:w16cid="http://schemas.microsoft.com/office/word/2016/wordml/cid" xmlns:w16="http://schemas.microsoft.com/office/word/2018/wordml" xmlns:w16sdtdh="http://schemas.microsoft.com/office/word/2020/wordml/sdtdatahash" xmlns:w16se="http://schemas.microsoft.com/office/word/2015/wordml/symex" mc:Ignorable="w14 w15 wp14">
+  <w:body>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading1"/>
+        <w:spacing w:after="120" w:before="240"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="36"/>
+          <w:szCs w:val="36"/>
+        </w:rPr>
+        <w:t xml:space="preserve">CHARACTER INDEX</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Master roster of all NPCs (and Crawlers, eventually) in the v2 campaign. Update whenever a Build Session adds or removes a character. Each entry: name, floor, role, file location, and current status.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Last updated: May 23, 2026 (Session 003 post-play).</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:spacing w:after="120" w:before="240"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Floor 1 — Everything Must Go (NPCs)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Garland Cress</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Role: Mall General Manager</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">File: 01_Characters/Garland_Cress.docx</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Status: ACTIVE — Play Session 1 cast. Floor 1 introduction. Escalator incident Session 002, engaged. Truth unlocked: undead, now knows. Session 003: told about his death, processed with support, did not become hostile. Now part of three-shift infrastructure model. Currently in generator room with Ruth. Relationship with party deepened. Gave spare lanyard and radio.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Tasha Okonkwo</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Role: The Kid Who Can't Die</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">File: 01_Characters/Tasha_Okonkwo.docx</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Status: ACTIVE — formally met Session 002. Extracted from Sears. Added to party HUD contacts. Dinosaur keychain returned. Provided freight elevator route. Floor 1 emotional core. Locked truth: real local kid, mother deceased, doesn't know. T-001 NABRZ reveal tied to Chaos Clock #25. Session 003: Re-entered Sears with party. Saw Employee Recognition Room. Provided flip-flop keychain. Still does not know about mother.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Harvey &quot;Mr. Pennybrook&quot; Pennybrook</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Role: Kiosk 3-B Almond Vendor</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">File: 01_Characters/Harvey_Pennybrook.docx</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Status: ACTIVE — Play Session 1 cast. FIRST NAMED NPC ENCOUNTER (met Session 001). Side ask completed. Glitch moment observed. Encounter E2, Zone A, Kiosk 3-B. Hands out the starter Loyalty Card. Locked truth: GalacticBrew sponsor plant, doesn't know.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">The Food Court People (Sbarro Sal, Hot Dog Dana, Cinnabon Unit 7)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Role: Food Court vendors (3-person unit)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">File: 01_Characters/Food_Court_People.docx</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Status: ACTIVE — Play Session 1 cast (Zone B, post-welcome). Floor 1 mid-floor cast. Locked truths per individual — Sal had the Mechanical Sub-Level key (T-006, now given); Dana is the mall memory; Unit 7 has developed feelings. Trio is mechanically a single Communal Loyalty Card unit. Session 003: Sal gave Sub-Level key voluntarily (emotional negotiation, not star threshold). Agreed to make pineapple pizza. Food Court Communal Loyalty at 13 (Doug), Regular tier.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Penny</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Role: Secondary Generator / Floor Infrastructure (New Primary)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">File: [No dedicated file yet — emergent character, Session 003]</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Status: ACTIVE — brought online Session 003. Named by Casey. Running floor at 40% minimum viable load. PA voice is now Penny's. Eager, uncertain, warm. Learning the floor. Technically the new boss per dungeon contract transfer (unresolved). 1988 manufacture, never commissioned until Session 003.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Ruth (Walda)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Role: Former Floor Infrastructure / Retired Generator</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">File: [No dedicated file — identity revealed Session 003, was the boss encounter]</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Status: IDLE — stepped down Session 003. Zero load. Resting in generator room. Real identity known to party. Was the PA voice (surface persona). 43 years of service. Made Tasha unkillable. Friends with @MALLCOP_4 (Badge #4). Trained Garland starting 1987.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:spacing w:after="120" w:before="240"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Crawlers</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">ACTIVE — Crawler dossiers built May 18, 2026 (Story Session, post-deferral). Doug: Substitute Teacher (CHA 6, CON 7, HP 23, MP 8); 10 starting skills including Improvisation (L4) and Reading the Room (L4). Casey: Trivia Night Host (CHA 6, INT 7, HP 17, MP 14); 10 starting skills including Genre Recognition (L4) and Audience Management (L4). Co-pilot role unchanged. Full sheets in 00_Campaign/Crawler_Dossiers.docx.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:pStyle w:val="Heading2"/>
+        <w:spacing w:after="120" w:before="240"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b/>
+          <w:bCs/>
+          <w:sz w:val="30"/>
+          <w:szCs w:val="30"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Active Cast — Session 004 (4 NPC files + 2 emergent / 8 individuals)</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">Per Story Session protocol step 5 (4-6 characters active per session). Floor 1 has four NPC files plus two emergent characters (Penny, Ruth); all loaded for Session 004.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">1. Harvey Pennybrook — recurring presence, Kiosk 3-B.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">2. Garland Cress — truth unlocked, in generator room with Ruth. Deepened rapport.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">3. The Food Court People (Sal, Dana, Unit 7) — Zone B; Sal gave Sub-Level key. Communal Loyalty 13.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">4. Tasha Okonkwo — re-entered Sears Session 003. Flip-flop keychain given. Still does not know about mother.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">5. Penny — new primary generator, running floor at 40%. PA voice. Emergent Session 003.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">6. Ruth (Walda) — retired generator, IDLE. Resting in generator room. Identity revealed Session 003.</w:t>
+      </w:r>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+    </w:p>
+    <w:p>
+      <w:pPr>
+        <w:spacing w:after="120"/>
+      </w:pPr>
+      <w:r>
+        <w:rPr>
+          <w:rFonts w:ascii="Arial" w:cs="Arial" w:eastAsia="Arial" w:hAnsi="Arial"/>
+          <w:b w:val="false"/>
+          <w:bCs w:val="false"/>
+          <w:i w:val="false"/>
+          <w:iCs w:val="false"/>
+          <w:sz w:val="24"/>
+          <w:szCs w:val="24"/>
+        </w:rPr>
+        <w:t xml:space="preserve">@MALLCOP_4 remains a NABRZ presence only (not a filed NPC). No offscreen-status entries required.</w:t>
+      </w:r>
+    </w:p>
+    <w:sectPr>
+      <w:pgSz w:w="12240" w:h="15840" w:orient="portrait"/>
+      <w:pgMar w:top="1440" w:right="1440" w:bottom="1440" w:left="1440" w:header="708" w:footer="708" w:gutter="0"/>
+      <w:pgNumType/>
+      <w:docGrid w:linePitch="360"/>
+    </w:sectPr>
+  </w:body>
+</w:document>

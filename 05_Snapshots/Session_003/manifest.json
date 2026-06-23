@@ -1,0 +1,31 @@
+{
+  "session_number": 3,
+  "timestamp": "2026-05-23T23:48:30.523323",
+  "floor": 1,
+  "level_ups": [],
+  "dossier_archives": [],
+  "notes": "",
+  "files": [
+    "00_Campaign/Campaign_Spine.docx",
+    "00_Campaign/Character_Index.docx",
+    "00_Campaign/Chat_System.docx",
+    "00_Campaign/Combat_Cheat_Sheet.docx",
+    "00_Campaign/Contract_Obligation_Log.docx",
+    "00_Campaign/Crafting_Log.docx",
+    "00_Campaign/Crawler_Dossiers.docx",
+    "00_Campaign/Discovery_Index.docx",
+    "00_Campaign/Dungeon_State_Log.docx",
+    "00_Campaign/Master_Inventory.docx",
+    "00_Campaign/Moments_Log.docx",
+    "00_Campaign/Pet_Companion_Registry.docx",
+    "00_Campaign/Reputation_Ledger.docx",
+    "00_Campaign/Thread_Tracker.docx",
+    "00_Campaign/Voice_Bible.docx",
+    "01_Characters/Food_Court_People.docx",
+    "01_Characters/Garland_Cress.docx",
+    "01_Characters/Harvey_Pennybrook.docx",
+    "01_Characters/Tasha_Okonkwo.docx"
+  ],
+  "file_count": 19,
+  "snapshot_type": "session_end"
+}

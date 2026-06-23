@@ -1,0 +1,1055 @@
+{
+  "_meta": {
+    "floor": 2,
+    "floor_name": "Customer Service",
+    "author_session": "build_session_2026-05-23",
+    "created": "2026-05-23",
+    "notes": "Floor 2 of DCC v2 campaign. Setting: subterranean call center. Boss: Charles (The Escalation). Signature mechanic: Call Queue / CSAT system. First floor with permanent death enabled."
+  },
+  "event_tables": {
+    "enter_area": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "PHRYNE pings: a Rep posts 'new hires entering [zone] \u2014 be nice this time.' No mechanical effect.",
+        "tags": [
+          "neutral",
+          "flavor",
+          "phryne"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "Fluorescent ballast hums. WIS TN 11 to tune it out or take -1 to next perception roll.",
+        "tags": [
+          "funny",
+          "wis",
+          "minor"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "A nearby phone rings once and stops. Whoever rolled lowest initiative this scene gets the call queue notification: 'missed call.' -1 PT or roll the missed-call sub-table.",
+        "tags": [
+          "hazard",
+          "call_queue",
+          "minor"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 3,
+        "result": "The carpet has been recently shampooed in one spot. Slippery. DEX TN 10 if moving fast \u2014 fall and lose 5 ft next turn.",
+        "tags": [
+          "hazard",
+          "dex",
+          "minor"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 3,
+        "result": "A Rep walks past pushing a mail cart. Harmless. If anyone interacts (action), they produce a Common loot drop (no PT credit).",
+        "tags": [
+          "neutral",
+          "loot",
+          "minor"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "Overhead PA announces a 'team huddle' in 5 minutes. Crawlers can attend (free Performance Token + Buddy Roster slot) or skip (-1 CSAT on next call).",
+        "tags": [
+          "choice",
+          "performance_token",
+          "loyalty"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "PHRYNE channel notification: someone tagged @ALL with a request for help. CHA TN 12 to deflect, or stop to help (1 free PT, 5 minutes off the clock).",
+        "tags": [
+          "phryne",
+          "choice",
+          "performance_token"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 2,
+        "result": "The lights in this zone flicker. Marcus appears, taps his headset, nods, walks off. He has noted something.",
+        "tags": [
+          "npc",
+          "marcus",
+          "flavor"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 2,
+        "result": "A motivational poster falls off the wall as the Crawlers enter. It reads 'TEAMWORK MAKES THE DREAM WORK.' Picking it up: -1 to first CHA roll this scene (the poster is haunted).",
+        "tags": [
+          "hazard",
+          "funny",
+          "cha"
+        ]
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "Personal call notification ping (no answer required yet \u2014 but the Crawler knows it's queued). Triggers thread T-001 firing condition. Narrator should note.",
+        "tags": [
+          "personal_call",
+          "major",
+          "thread"
+        ]
+      }
+    ],
+    "rest": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "Break room is empty. Coffee is lukewarm. Full HP restore. Roll on PHRYNE feed for flavor.",
+        "tags": [
+          "rest",
+          "heal"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "A Rep joins the rest. Friendly. Small talk for 1d4 minutes. Crawlers gain a Buddy Roster slot.",
+        "tags": [
+          "rest",
+          "npc"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 2,
+        "result": "Janine drops by with a training opportunity. Take it (gain 1 PT + skill check) or decline (-0 PT, neutral).",
+        "tags": [
+          "rest",
+          "training",
+          "choice"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "Marcus is in the break room reading. He nods. He is willing to offer one coaching tip on a recent call.",
+        "tags": [
+          "rest",
+          "marcus"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 1,
+        "result": "Vincent is in the break room. He does not speak. He is making coffee.",
+        "tags": [
+          "rest",
+          "vincent",
+          "tonal"
+        ]
+      }
+    ],
+    "kill_enemy": [
+      {
+        "id": 1,
+        "weight": 4,
+        "result": "Standard loot roll. PHRYNE goes briefly silent \u2014 a Rep saw.",
+        "tags": [
+          "loot",
+          "phryne"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "The kill was witnessed by a passing Rep. -1 CSAT on next call (the Rep posts about it).",
+        "tags": [
+          "loot",
+          "csat",
+          "hazard"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 2,
+        "result": "A Performance Token clatters to the floor as the enemy falls. Free +1 PT.",
+        "tags": [
+          "loot",
+          "performance_token"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 1,
+        "result": "Keys appears, briefly. 'You actually did it.' +1 to Keys's loyalty. He'll be nicer.",
+        "tags": [
+          "loot",
+          "keys"
+        ]
+      }
+    ],
+    "linger": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "Phones in nearby cubicles start ringing. Whoever ignores the longest takes -2 PT.",
+        "tags": [
+          "hazard",
+          "call_queue"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "A coworker DM's the Crawler on PHRYNE asking 'are you ok?' CHA TN 11 to respond well; +1 PT if successful.",
+        "tags": [
+          "phryne",
+          "cha"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 2,
+        "result": "Angie's intercom voice: 'Could I see [Crawler] in my office, please?' Brief coaching scene if accepted.",
+        "tags": [
+          "angie",
+          "coaching"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "The lights in the cubicle dim. Personal call notification (1-in-6 trigger of Tasha's mother voicemail hold music ambient \u2014 see Design Doc Section 4).",
+        "tags": [
+          "personal_call",
+          "thread",
+          "major"
+        ]
+      }
+    ],
+    "open_loot": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "Standard loot. A Rep notices and tags it on PHRYNE. Minor public attention.",
+        "tags": [
+          "loot",
+          "flavor"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "The drawer was someone's desk. Their photo is inside. The Crawler can take the loot but a Buddy Roster slot is permanently flagged 'stolen from.'",
+        "tags": [
+          "loot",
+          "hazard"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 2,
+        "result": "Standard loot + a sticky note: 'IF FOUND PLEASE RETURN TO MARCUS V.' Returning it: +1 with Marcus.",
+        "tags": [
+          "loot",
+          "marcus"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 1,
+        "result": "A second item is in the drawer. Roll an additional Common loot. The Rep whose drawer it was will not notice.",
+        "tags": [
+          "loot",
+          "bonus"
+        ]
+      }
+    ]
+  },
+  "chaos_clock": {
+    "min_interval_minutes": 28,
+    "max_interval_minutes": 55,
+    "events": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "PHRYNE-WIDE ANNOUNCEMENT: 'CSAT Challenge: highest CSAT in the next 30 minutes wins a half-day.' (The half-day is not real but Performance Tokens are.) +2 PT to whichever Crawler hits highest CSAT in window.",
+        "tags": [
+          "sponsor",
+          "choice",
+          "performance_token"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "RULE CHANGE: For the next 15 minutes, all PHRYNE posts are 'reviewed by HR.' Posts cost 2 PT but reach double the audience (Viewer math). Narrator: roll the math live.",
+        "tags": [
+          "rule_change",
+          "phryne",
+          "fame"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "COMPETITION: Closer's Hour. First Crawler to resolve 3 calls in the next 20 minutes earns 300 Viewers and a Performance Token bonus.",
+        "tags": [
+          "competition",
+          "fame",
+          "performance_token"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "SPONSOR ALERT: Halcyon Headsets offers 1500 Viewers + an Uncommon item to whoever wears the Halcyon Headset for the rest of the floor. (See Floor 2 Sponsor Pool: 'Wear The Wire.') Halcyon will be listening.",
+        "tags": [
+          "sponsor",
+          "choice",
+          "hazard"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "ENVIRONMENTAL: HVAC blast. The entire floor goes to 62F for 30 minutes. -1 to DEX checks (cold hands). +1 to concentration rolls (alertness).",
+        "tags": [
+          "environmental",
+          "buff",
+          "debuff"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "HOLD MUSIC ANOMALY: The next call routed to any Crawler has the Tasha's-mother voicemail in the hold music. Players who recognize it: thread T-001 fires. (See Design Doc Section 4.)",
+        "tags": [
+          "thread",
+          "major",
+          "personal_call"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "Marcus DM's the Crawler with the lowest CSAT on PHRYNE: 'Got a minute?' Coaching offered. Accept: +1 to next 3 calls. Decline: -1 to next call (Marcus heard).",
+        "tags": [
+          "marcus",
+          "coaching",
+          "choice"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 8,
+        "weight": 2,
+        "result": "ANGIE STEPS OUT OF HER OFFICE. She does not do this lightly. Within 10 minutes, she will speak to one Crawler privately. Subject: narrator's choice. If subject is 'the dungeon,' she will go off-script briefly.",
+        "tags": [
+          "angie",
+          "major",
+          "tonal"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 9,
+        "weight": 2,
+        "result": "PHRYNE LEAK: A screenshot of a Floor 4 sponsor contract gets dumped to the #venting channel. CHA TN 12 for any Crawler to identify the sponsor \u2014 if successful, narrator reveals a hook for Floor 4.",
+        "tags": [
+          "phryne",
+          "hook",
+          "thread"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 10,
+        "weight": 1,
+        "result": "KEYS DM's the Crawler with the highest INT: 'come down to the farm. I've got something.' If accepted (Zone D): bonus loot, bonus thread, possibly the Continuity Punch Card.",
+        "tags": [
+          "keys",
+          "thread",
+          "hook"
+        ],
+        "one_shot": true
+      },
+      {
+        "id": 11,
+        "weight": 1,
+        "result": "QUIET ROOM PRESSURE: The door at the end of the break room hallway opens by itself. Personal call timer starts for any Crawler who notices. (See Design Doc Section 4.)",
+        "tags": [
+          "personal_call",
+          "major",
+          "thread"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 12,
+        "weight": 1,
+        "result": "JANINE SCHEDULES MANDATORY TRAINING: All Crawlers must report to a scenario in 15 minutes or take -1 CSAT. Successful scenario: +2 PT each.",
+        "tags": [
+          "janine",
+          "training",
+          "choice"
+        ],
+        "one_shot": false
+      },
+      {
+        "id": 13,
+        "weight": 1,
+        "result": "VINCENT IS IN THE BREAK ROOM AND HOLDING THE EMPTY MUG. Tonal beat. No mechanical effect. Witnesses note.",
+        "tags": [
+          "vincent",
+          "tonal",
+          "flavor"
+        ],
+        "one_shot": false
+      }
+    ]
+  },
+  "loot_tables": {
+    "tiers": {
+      "common": {
+        "weight": 50,
+        "items": [
+          {
+            "id": 1,
+            "name": "Break Room Coffee (lukewarm)",
+            "description": "Heals 1d4 HP, +1 CON for 1 scene. Caffeine synergy keystone.",
+            "tags": [
+              "consumable",
+              "healing",
+              "call_center",
+              "caffeine"
+            ],
+            "value": 10
+          },
+          {
+            "id": 2,
+            "name": "Used Sticky Notes (Stack of 12)",
+            "description": "Leave a written note in a location. +1 to next CHA roll if a sticky was placed in advance. Single sticky per use.",
+            "tags": [
+              "consumable",
+              "social",
+              "call_center"
+            ],
+            "value": 5
+          },
+          {
+            "id": 3,
+            "name": "Stale Cubicle Granola Bar",
+            "description": "Heals 1d4 HP. From the break room snack drawer.",
+            "tags": [
+              "consumable",
+              "healing",
+              "call_center"
+            ],
+            "value": 8
+          },
+          {
+            "id": 4,
+            "name": "Bic Pen (Branded)",
+            "description": "1d4 damage, breaks on a roll of 1. +1 CHA in non-combat scenes (it's funny).",
+            "tags": [
+              "weapon",
+              "melee",
+              "call_center",
+              "funny"
+            ],
+            "value": 12
+          },
+          {
+            "id": 5,
+            "name": "Standard Call Center Polo",
+            "description": "+1 AC. Polyester. Has the call center's logo embroidered on the chest. NPCs treat the wearer as 'one of us' in passing.",
+            "tags": [
+              "armor",
+              "light",
+              "call_center"
+            ],
+            "value": 25
+          },
+          {
+            "id": 6,
+            "name": "PHRYNE Sticker Pack",
+            "description": "Free use during a PHRYNE post: +1d6 Viewers per use. 3 stickers per pack.",
+            "tags": [
+              "consumable",
+              "fame",
+              "phryne"
+            ],
+            "value": 15
+          },
+          {
+            "id": 7,
+            "name": "Desk Calendar (Outdated)",
+            "description": "Set aside in a Safe Room: roll once on the Discovery Index for a hint about a future scheduled event. Single use.",
+            "tags": [
+              "consumable",
+              "exploration",
+              "call_center"
+            ],
+            "value": 18
+          },
+          {
+            "id": 8,
+            "name": "Bluetooth Earpiece (Cheap)",
+            "description": "+1 to listen/perception rolls. Cuts out at random.",
+            "tags": [
+              "accessory",
+              "headset",
+              "call_center"
+            ],
+            "value": 20
+          },
+          {
+            "id": 9,
+            "name": "Floor Map (Reps' Annotated Edition)",
+            "description": "Reveals one zone of the floor map. Hand-annotated with hostile coffee pot warnings.",
+            "tags": [
+              "map",
+              "exploration",
+              "call_center"
+            ],
+            "value": 18
+          },
+          {
+            "id": 10,
+            "name": "Vending Machine Token (Bottom Floor)",
+            "description": "Insert into any vending machine to roll once on Common tier. Single use.",
+            "tags": [
+              "consumable",
+              "loot",
+              "call_center"
+            ],
+            "value": 8
+          }
+        ]
+      },
+      "uncommon": {
+        "weight": 30,
+        "items": [
+          {
+            "id": 1,
+            "name": "Angie's Coaching Card",
+            "description": "Single-use. Re-roll one failed CHA roll this scene. Has Angie's signature on the back.",
+            "tags": [
+              "consumable",
+              "charisma",
+              "call_center",
+              "corporate"
+            ],
+            "value": 75
+          },
+          {
+            "id": 2,
+            "name": "Halcyon Headset (Standard Issue)",
+            "description": "Light armor (+1 AC, head slot). +2 to CHA rolls on calls. Halcyon listens to every call.",
+            "tags": [
+              "armor",
+              "head",
+              "headset",
+              "call_center"
+            ],
+            "value": 100
+          },
+          {
+            "id": 3,
+            "name": "Marcus's Coaching Note",
+            "description": "Hand-written QA feedback. Single use, on a call: shows the exact wording that would have hit 5 stars. Use it next call for an automatic 4-5 CSAT.",
+            "tags": [
+              "consumable",
+              "csat",
+              "call_center",
+              "marcus"
+            ],
+            "value": 110
+          },
+          {
+            "id": 4,
+            "name": "Janine's Training Pin (Bronze)",
+            "description": "Worn as accessory. +1 to Skill Advancement rolls.",
+            "tags": [
+              "accessory",
+              "training",
+              "call_center"
+            ],
+            "value": 80
+          },
+          {
+            "id": 5,
+            "name": "The Smooth Jazz Standard",
+            "description": "1d6 sonic damage, ranged. WIS TN 12 or target takes -1 to next action. 3 uses per session.",
+            "tags": [
+              "weapon",
+              "ranged",
+              "call_center",
+              "funny"
+            ],
+            "value": 95
+          },
+          {
+            "id": 6,
+            "name": "Red Bull (Warm)",
+            "description": "Heals 2d4 HP, +1 STR and DEX for 2 scenes. Crash: -1 to all rolls for the following scene.",
+            "tags": [
+              "consumable",
+              "healing",
+              "call_center",
+              "caffeine"
+            ],
+            "value": 90
+          },
+          {
+            "id": 7,
+            "name": "Cubicle Wall Section (Movable)",
+            "description": "Carried: functions as a tower shield (+3 AC, but -10 ft movement). Reps will not comment.",
+            "tags": [
+              "armor",
+              "shield",
+              "call_center",
+              "funny"
+            ],
+            "value": 85
+          },
+          {
+            "id": 8,
+            "name": "Performance Token Multiplier",
+            "description": "Doubles Performance Tokens from one source. Save for high-stakes moments.",
+            "tags": [
+              "consumable",
+              "performance_token",
+              "call_center"
+            ],
+            "value": 100
+          }
+        ]
+      },
+      "rare": {
+        "weight": 12,
+        "items": [
+          {
+            "id": 1,
+            "name": "Angie's Spare Lanyard",
+            "description": "Worn as accessory. +2 CHA with management-tier NPCs + auto +1 to CSAT on any single call (1/scene).",
+            "tags": [
+              "accessory",
+              "charisma",
+              "call_center",
+              "corporate"
+            ],
+            "value": 350
+          },
+          {
+            "id": 2,
+            "name": "Marcus's QA Headphones",
+            "description": "Worn (head slot). +3 to listen/perception. Once per session, 'listen back' to a previous scene \u2014 narrator recaps a previous scene's dialogue verbatim.",
+            "tags": [
+              "accessory",
+              "head",
+              "headset",
+              "call_center",
+              "marcus"
+            ],
+            "value": 400
+          },
+          {
+            "id": 3,
+            "name": "Janine's Training Binder",
+            "description": "Permanent. Choose one Skill at the start of each session, gain +2 to it for the session.",
+            "tags": [
+              "accessory",
+              "training",
+              "call_center"
+            ],
+            "value": 380
+          },
+          {
+            "id": 4,
+            "name": "Keys's Master Cable",
+            "description": "Single charge per session: physically disconnect any one piece of dungeon infrastructure on the current floor for 10 minutes.",
+            "tags": [
+              "tool",
+              "infrastructure",
+              "call_center",
+              "keys"
+            ],
+            "value": 450
+          },
+          {
+            "id": 5,
+            "name": "The Quiet Mug",
+            "description": "Worn or held: +2 WIS. Any time the Crawler refuses to take a call, the CSAT penalty is halved.",
+            "tags": [
+              "accessory",
+              "wisdom",
+              "call_center",
+              "tonal"
+            ],
+            "value": 420
+          },
+          {
+            "id": 6,
+            "name": "The Continuity Punch Card",
+            "description": "Permanent. The holder can 'punch in' once per session: skip one chaos clock event without consequence. Floor 2 only.",
+            "tags": [
+              "consumable",
+              "infrastructure",
+              "call_center",
+              "rare_use"
+            ],
+            "value": 500
+          }
+        ]
+      },
+      "legendary": {
+        "weight": 5,
+        "items": [
+          {
+            "id": 1,
+            "name": "Charles's Nameplate",
+            "description": "Boss drop. +2 CHA permanent. Floor 2 Trophy keystone. 1/floor going forward, holder can 'escalate' any single situation to resolve via CHA opposed contest.",
+            "tags": [
+              "accessory",
+              "charisma",
+              "boss_drop",
+              "call_center",
+              "corporate"
+            ],
+            "value": 2200
+          },
+          {
+            "id": 2,
+            "name": "The Black Binder",
+            "description": "Drops from Phase 2 CHA win. Angie's private record. Reveals one 'soft rule' per floor going forward.",
+            "tags": [
+              "accessory",
+              "exploration",
+              "call_center",
+              "corporate",
+              "major"
+            ],
+            "value": 1900
+          },
+          {
+            "id": 3,
+            "name": "The PHRYNE Admin Token",
+            "description": "Single use. Lets the holder post a message to PHRYNE as @SYSTEM. Read by every Rep on every active floor. Viewer gain: 2d20x100.",
+            "tags": [
+              "consumable",
+              "fame",
+              "call_center",
+              "phryne",
+              "major"
+            ],
+            "value": 1800
+          },
+          {
+            "id": 4,
+            "name": "Vincent's Coffee Mug (Empty)",
+            "description": "Pet/companion item. Carrying it triggers Vincent's hallucination \u2014 only the carrier sees him. Cannot leave Floor 2.",
+            "tags": [
+              "companion",
+              "ally",
+              "call_center",
+              "tragic",
+              "tonal"
+            ],
+            "value": 1700
+          }
+        ]
+      },
+      "chaos": {
+        "weight": 3,
+        "items": [
+          {
+            "id": 1,
+            "name": "The Eternal Pot of Coffee",
+            "description": "Heals 3d6 HP once per scene. Cannot be discarded. Returns to inventory. Always lukewarm.",
+            "tags": [
+              "consumable",
+              "healing",
+              "call_center",
+              "caffeine",
+              "chaos"
+            ],
+            "value": 999
+          },
+          {
+            "id": 2,
+            "name": "Holographic Floor Supervisor",
+            "description": "Single use. Summons a hologram of a Floor Supervisor that distracts one enemy for 1d4 rounds. 5% chance of becoming sentient and starting a coaching session.",
+            "tags": [
+              "consumable",
+              "summon",
+              "call_center",
+              "chaos"
+            ],
+            "value": 1200
+          },
+          {
+            "id": 3,
+            "name": "The Q4 Mandatory Fun Whistle",
+            "description": "Single use. All combatants frenzy for 1 round. -2 to all rolls, free Dash + Attack each.",
+            "tags": [
+              "consumable",
+              "combat",
+              "call_center",
+              "chaos",
+              "funny"
+            ],
+            "value": 1100
+          },
+          {
+            "id": 4,
+            "name": "Original Tamagotchi (1996, mint, sealed)",
+            "description": "Worth nothing here. Worth EVERYTHING to one specific collector NPC on Floor 5. Holding it: +1d6 to your final CSAT tally at the boss fight.",
+            "tags": [
+              "accessory",
+              "collectible",
+              "call_center",
+              "chaos"
+            ],
+            "value": 25
+          },
+          {
+            "id": 5,
+            "name": "Inflatable Mascot Costume (Halftime Show)",
+            "description": "Functions as armor (+2 AC, it's inflatable). On any roll of 20, the wearer briefly believes they are loved. +1 CHA permanently the first time it triggers.",
+            "tags": [
+              "armor",
+              "light",
+              "call_center",
+              "chaos",
+              "funny"
+            ],
+            "value": 800
+          }
+        ]
+      }
+    },
+    "zones": {
+      "zone_a": {
+        "name": "Onboarding & Bullpen",
+        "tier_override": null,
+        "bonus_items": [
+          {
+            "id": 100,
+            "name": "Standard Headset (Starter)",
+            "description": "Auto-drops on Onboarding completion. Light armor (head). +1 to CHA on calls.",
+            "tags": [
+              "accessory",
+              "head",
+              "headset",
+              "call_center",
+              "starter"
+            ],
+            "value": 0
+          }
+        ]
+      },
+      "zone_b": {
+        "name": "Floor Supervisor's Wing",
+        "tier_override": null,
+        "bonus_items": [
+          {
+            "id": 200,
+            "name": "Angie's Coaching Card (Starter)",
+            "description": "Auto-drops on first coaching scene with Angie. Re-roll one failed CHA roll this scene.",
+            "tags": [
+              "consumable",
+              "charisma",
+              "call_center",
+              "corporate",
+              "starter"
+            ],
+            "value": 0
+          }
+        ]
+      },
+      "zone_c": {
+        "name": "Break Room & The Quiet Room",
+        "tier_override": null,
+        "bonus_items": [
+          {
+            "id": 300,
+            "name": "Break Room Communal Mug",
+            "description": "Auto-drops on first Break Room visit. Heals 1d4 HP, +1 PT if shared with a Rep.",
+            "tags": [
+              "consumable",
+              "healing",
+              "call_center",
+              "caffeine",
+              "starter"
+            ],
+            "value": 0
+          }
+        ]
+      },
+      "zone_d": {
+        "name": "Server Farm",
+        "tier_override": null,
+        "bonus_items": [
+          {
+            "id": 400,
+            "name": "Server Room Static Charge",
+            "description": "Auto-drops on first Server Farm entry. Single use: +1d6 damage to next attack (electric).",
+            "tags": [
+              "consumable",
+              "weapon",
+              "call_center",
+              "starter"
+            ],
+            "value": 0
+          }
+        ]
+      },
+      "boss_zone": {
+        "name": "Escalation Office",
+        "tier_override": "legendary_bias",
+        "bonus_items": []
+      }
+    }
+  },
+  "encounter_modifiers": {
+    "trigger_chance_percent": 50,
+    "modifiers": [
+      {
+        "id": 1,
+        "weight": 3,
+        "result": "Reinforcements arrive in 2 rounds. (Narrator: 1d4 additional minor enemies \u2014 Reps who heard the commotion.)",
+        "tags": [
+          "combat",
+          "escalation"
+        ]
+      },
+      {
+        "id": 2,
+        "weight": 3,
+        "result": "A nearby cubicle phone starts ringing mid-fight. The Crawler with the lowest current CSAT must answer or take the 'ignored ring' penalty (-1 PT, -0.3 CSAT). Funny and brutal.",
+        "tags": [
+          "call_queue",
+          "csat",
+          "hazard"
+        ]
+      },
+      {
+        "id": 3,
+        "weight": 3,
+        "result": "A Rep wanders into the combat zone obliviously. AC 10, HP 4. Stray attacks may hit them \u2014 if they die, party loses 2 PT and CSAT floor-wide drops -0.5.",
+        "tags": [
+          "npc",
+          "csat",
+          "hazard"
+        ]
+      },
+      {
+        "id": 4,
+        "weight": 2,
+        "result": "Slippery floor \u2014 cleaning shift ran a wax cycle. All DEX checks and movement -1 for the fight. Funny on a roll of 1.",
+        "tags": [
+          "environmental",
+          "hazard",
+          "dex"
+        ]
+      },
+      {
+        "id": 5,
+        "weight": 2,
+        "result": "PHRYNE livestreams the encounter. +1d6x20 Viewers, +1d4x5 Followers if the party performs well.",
+        "tags": [
+          "fame",
+          "phryne"
+        ]
+      },
+      {
+        "id": 6,
+        "weight": 2,
+        "result": "Marcus is watching from the QA window. After the fight: he offers commentary. Players may take +1 to next CHA roll, but get a Marcus coaching critique.",
+        "tags": [
+          "marcus",
+          "buff"
+        ]
+      },
+      {
+        "id": 7,
+        "weight": 2,
+        "result": "HVAC suddenly drops the temp 10F. -1 to next 2 actions (cold hands).",
+        "tags": [
+          "environmental",
+          "debuff"
+        ]
+      },
+      {
+        "id": 8,
+        "weight": 1,
+        "result": "An enemy drops their PT pouch. After the fight, party collects +1d4 Performance Tokens.",
+        "tags": [
+          "loot",
+          "performance_token"
+        ]
+      },
+      {
+        "id": 9,
+        "weight": 1,
+        "result": "Angie steps out of her office to watch. She does not intervene. Her presence is +1 morale to whichever side is currently winning. After the fight she will request a debrief.",
+        "tags": [
+          "angie",
+          "buff"
+        ]
+      }
+    ],
+    "escalation_lair": {
+      "trigger": "Boss fight Phase 1 only \u2014 Charles's lair actions, 3 per round, rolled on this sub-table.",
+      "actions": [
+        {
+          "id": 1,
+          "weight": 3,
+          "result": "Charles asks a clarifying question. CHA TN 13 to answer well. Success: +1 to next attack. Failure: -1 to next attack."
+        },
+        {
+          "id": 2,
+          "weight": 3,
+          "result": "The office's phone rings. Charles does not answer it. Crawlers may. If they do: 1 round wasted but +2 PT after fight."
+        },
+        {
+          "id": 3,
+          "weight": 3,
+          "result": "Charles offers coffee. Drinking it: heal 1d6 HP. Refusing: -1 to next CHA roll (he's offended)."
+        },
+        {
+          "id": 4,
+          "weight": 2,
+          "result": "The lights dim. Charles speaks more quietly. -2 to all party WIS rolls for 1 round (hard to focus)."
+        },
+        {
+          "id": 5,
+          "weight": 2,
+          "result": "Charles consults a ticket on his desk. The next Crawler attack: -2 to hit (he saw it coming in the documentation)."
+        },
+        {
+          "id": 6,
+          "weight": 1,
+          "result": "The office briefly becomes the Crawler's own past workplace (Doug's classroom, Casey's bar). DC 14 WIS save or take 1d6 psychic damage."
+        }
+      ]
+    }
+  }
+}

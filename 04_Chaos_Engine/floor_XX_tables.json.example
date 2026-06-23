@@ -1,0 +1,76 @@
+{
+  "_meta": {
+    "floor": 0,
+    "floor_name": "Example Floor",
+    "author_session": "build_session_id",
+    "created": "2026-04-25",
+    "notes": "This is the example/template file. Copy to floor_01_tables.json and populate."
+  },
+
+  "event_tables": {
+    "enter_area": [
+      {"id": 1, "weight": 3, "result": "[PLACEHOLDER] Nothing happens. The silence is suspicious.", "tags": ["neutral"]},
+      {"id": 2, "weight": 2, "result": "[PLACEHOLDER] A camera drone buzzes closer. Viewer count ticks up.", "tags": ["fame", "minor"]},
+      {"id": 3, "weight": 1, "result": "[PLACEHOLDER] The floor shifts. Everyone make a DEX check TN 12.", "tags": ["hazard", "dex"]}
+    ],
+    "rest": [
+      {"id": 1, "weight": 3, "result": "[PLACEHOLDER] Rest is uneventful. Recover normally.", "tags": ["neutral"]},
+      {"id": 2, "weight": 1, "result": "[PLACEHOLDER] A vendor appears mid-nap. Deals expire in 60 seconds.", "tags": ["commerce", "funny"]}
+    ],
+    "kill_enemy": [
+      {"id": 1, "weight": 3, "result": "[PLACEHOLDER] Clean kill. No complications.", "tags": ["neutral"]},
+      {"id": 2, "weight": 1, "result": "[PLACEHOLDER] The corpse explodes into loot pinata confetti. Roll on loot table.", "tags": ["loot", "funny"]}
+    ],
+    "linger": [
+      {"id": 1, "weight": 3, "result": "[PLACEHOLDER] Time passes. Nothing changes.", "tags": ["neutral"]},
+      {"id": 2, "weight": 1, "result": "[PLACEHOLDER] A countdown appears on every screen in the room. It starts at 30.", "tags": ["hazard", "urgent"]}
+    ],
+    "open_loot": [
+      {"id": 1, "weight": 3, "result": "[PLACEHOLDER] Standard loot. Roll on loot table for this zone.", "tags": ["loot"]},
+      {"id": 2, "weight": 1, "result": "[PLACEHOLDER] Mimic. It's always a mimic. Initiative.", "tags": ["combat", "funny"]}
+    ]
+  },
+
+  "chaos_clock": {
+    "min_interval_minutes": 20,
+    "max_interval_minutes": 40,
+    "events": [
+      {"id": 1, "weight": 2, "result": "[PLACEHOLDER] SPONSOR ALERT: GalacticBrew offers 500 Viewers to whoever drinks an unidentified potion first.", "tags": ["sponsor", "choice"], "one_shot": false},
+      {"id": 2, "weight": 1, "result": "[PLACEHOLDER] RULE CHANGE: Gravity reverses in the current zone for 10 minutes.", "tags": ["environmental", "major"], "one_shot": true},
+      {"id": 3, "weight": 2, "result": "[PLACEHOLDER] COMPETITION: Speed trial. Clear the next room in under 3 minutes for bonus XP.", "tags": ["competition", "timed"], "one_shot": false}
+    ]
+  },
+
+  "loot_tables": {
+    "tiers": {
+      "common":    {"weight": 50, "items": [
+        {"id": 1, "name": "[PLACEHOLDER] Basic Healing Potion", "description": "Restores 2d6 HP.", "tags": ["consumable", "healing"], "value": 50}
+      ]},
+      "uncommon":  {"weight": 30, "items": [
+        {"id": 1, "name": "[PLACEHOLDER] Slightly Better Sword", "description": "+1 to attack rolls. It glows faintly when you're embarrassed.", "tags": ["weapon", "melee", "light"], "value": 150}
+      ]},
+      "rare":      {"weight": 12, "items": [
+        {"id": 1, "name": "[PLACEHOLDER] Cloak of Adequate Camouflage", "description": "+3 Stealth. Works unless someone is actively looking.", "tags": ["armor", "stealth"], "value": 400}
+      ]},
+      "legendary": {"weight": 5, "items": [
+        {"id": 1, "name": "[PLACEHOLDER] The Negotiator", "description": "A baseball bat that grants +5 CHA when held during conversation. -2 CHA when used as intended.", "tags": ["weapon", "melee", "charisma"], "value": 1000}
+      ]},
+      "chaos":     {"weight": 3, "items": [
+        {"id": 1, "name": "[PLACEHOLDER] Interdimensional Fishing Rod", "description": "Cast into any liquid surface. Roll d20: 1-10 junk, 11-15 fish, 16-19 treasure, 20 something alive.", "tags": ["tool", "chaos", "fishing"], "value": 999}
+      ]}
+    },
+    "zones": {
+      "zone_a": {"name": "[PLACEHOLDER] Starting Zone", "tier_override": null, "bonus_items": []},
+      "zone_b": {"name": "[PLACEHOLDER] Boss Zone", "tier_override": {"legendary": 10, "chaos": 5}, "bonus_items": []}
+    }
+  },
+
+  "encounter_modifiers": {
+    "trigger_chance_percent": 50,
+    "modifiers": [
+      {"id": 1, "weight": 3, "result": "[PLACEHOLDER] Reinforcements arrive in 2 rounds.", "tags": ["combat", "escalation"]},
+      {"id": 2, "weight": 2, "result": "[PLACEHOLDER] The floor is now lava. Literally. DEX check each round or take 1d6.", "tags": ["environmental", "hazard"]},
+      {"id": 3, "weight": 1, "result": "[PLACEHOLDER] An NPC joins the fight on the enemy side. They seem apologetic about it.", "tags": ["npc", "betrayal", "funny"]}
+    ]
+  }
+}

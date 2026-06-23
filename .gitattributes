@@ -1,0 +1,6 @@
+# Treat Office docs as binary so Git doesn't try to diff/merge them
+*.docx binary
+*.xlsx binary
+*.pptx binary
+# Don't count docx toward language stats; surface markdown/python instead
+*.docx linguist-documentation
